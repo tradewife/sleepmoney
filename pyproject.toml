@@ -1,0 +1,22 @@
+[project]
+name = "sleepmoney"
+version = "0.1.0"
+description = "Automated sleep video generator harness"
+readme = "README.md"
+requires-python = ">=3.9"
+    "ffmpeg-python",
+    "requests",
+    "rich",
+    "pydantic",
+    "google-generativeai",
+    "python-dotenv",
+    "gTTS",
+    "Pillow"
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
